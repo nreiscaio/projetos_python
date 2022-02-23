@@ -12,7 +12,11 @@ os.system('cls')
 
 #Entrada:
 print('-'*50)
-print('CONVERSOR DE REAIS EM DOLAR')
+print('CONVERSOR DE REAIS EM DOLAR, EURO, LIBRA')
+print('-'*50)
+print('Tecle "1" para converter R$ para U$ (Dolar);')
+print('      "2" para converter R$ para € (Euro);')
+print('      "3" para converter R$ para £ (Libra).')
 print('='*50)
 
 #Entrada de dados:
@@ -39,12 +43,12 @@ while True:
         break
 
     elif digito == 2:
-        print(f'R${a} vale U${resulatdo2:.4f}')
+        print(f'R${a} vale €{resulatdo2:.4f}')
 
         break
 
     elif digito == 3:
-        print(f'R${a} vale U${resultado3:.4f}')
+        print(f'R${a} vale £{resultado3:.4f}')
 
         break
 
