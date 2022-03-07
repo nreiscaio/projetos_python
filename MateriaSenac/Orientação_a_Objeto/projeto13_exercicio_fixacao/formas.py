@@ -15,7 +15,7 @@ class Formas():
         resultado = (base * altura) / 2
         print(f'A área do triângulo é: {resultado}')
 
-    def areaCirculo(self, raio, pi):
-        resultado = pi * (raio ** 2)
+    def areaCirculo(self, raio):
+        resultado = 3.14 * (raio ** 2)
         print(f'A área do circulo é: {resultado}')
 
