@@ -5,14 +5,17 @@
 
 import os
 import retangulo, triangulo, circulo
-os.system('cls')
+import time, sys
 
 
 
 while (True):
+    
 
     try:
+
         
+
         os.system('cls')
 
         print('Programa para calcular áreas.')
@@ -56,13 +59,28 @@ while (True):
             break
 
         else:
-        
+
+            os.system('cls')
+            print()
+            print('-'*50)
             print('Operação não encontrada, digite novamente.')
             print('-'*50)
             print()
 
+            for i in range(0, 3):
+                sys.stdout.write('\r{}'.format(i))
+                sys.stdout.flush()
+                time.sleep(1)
+
     except ValueError:
 
+        os.system('cls')
+        print('-'*50)
         print('ValueError: Valor não inserido!')
         print('-'*50)
         print()
+
+        for i in range(0, 3):
+            sys.stdout.write('\r{}'.format(i))
+            sys.stdout.flush()
+            time.sleep(1)
